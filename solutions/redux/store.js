@@ -13,4 +13,7 @@ function counter(state, action) {
     }
   }
 
-var store = Redux.createStore(counter)
+var store = Redux.createStore(
+    counter,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    )
