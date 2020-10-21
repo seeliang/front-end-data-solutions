@@ -1,13 +1,13 @@
 function counter(state, action) {
     if (typeof state === 'undefined') {
-      return 0
+      return {count: 0}
     }
 
     switch (action.type) {
       case 'INCREMENT':
-        return state + 1
+        return {...state, count: state.count + 1} 
       case 'DECREMENT':
-        return state - 1
+        return {...state, count: state.count - 1} 
       default:
         return state
     }
