@@ -6,5 +6,6 @@
   "repository": "git@github.com:seeliang/front-end-data-solutions.git",
   "author": "seeliang <hi@sihuiliang.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": ["solutions/**"]
 }
