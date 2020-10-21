@@ -1,0 +1,10 @@
+{
+  "name": "front-end-data-solutions",
+  "version": "1.0.0",
+  "description": "samples of front end data management solutions",
+  "main": "index.js",
+  "repository": "git@github.com:seeliang/front-end-data-solutions.git",
+  "author": "seeliang <hi@sihuiliang.com>",
+  "license": "MIT",
+  "private": true
+}
