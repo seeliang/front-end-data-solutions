@@ -11,7 +11,6 @@ function App() {
   useEffect(() => {
     store.subscribe(update)
   },[store])
-rea
   const send = (e) => {
     e.preventDefault();
     store.dispatch({ type: "MESSAGE_UPDATE", text})
