@@ -20,6 +20,11 @@ module.exports = {
         }
       ],
     },
+    devtool: 'source-map' ,
+    devServer: {
+        contentBase: path.join(__dirname, 'dist/redux'),
+        port: 9000
+      },
     output: {
         path: path.resolve(__dirname, 'dist/redux/'),
         filename: 'react.js'
