@@ -24,6 +24,7 @@
               "src/store.js",
               "src/pub.js",
               "src/sub.js",
+              "src/react.js",
               "src/assets"
             ],
             "styles": [

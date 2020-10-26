@@ -15,6 +15,14 @@ function App() {
     e.preventDefault();
     store.dispatch({ type: "MESSAGE_UPDATE", text})
   }
+
+  const add = () => {
+    store.dispatch({ type: 'COUNT_INCREMENT' })
+  }
+
+  const minus = () => {
+    store.dispatch({ type: 'COUNT_DECREMENT' })
+  }
   const typing = (e) => {
     const text = e.target.value;
     setText(text)
@@ -22,8 +30,9 @@ function App() {
   return (
     <div className="App">
       <h2> react app </h2>
-      <h4>sub count</h4>
-      <p> result: {count} </p>
+      <h4>pub count</h4>
+      <button onClick={add}> add </button>
+      <button onClick={minus}> minus </button>
       <h4>pub message</h4>
       <form>
         <input value={text} onChange={typing}></input>
